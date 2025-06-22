@@ -1,0 +1,8 @@
+.env
+jars/
+dags/__pycache__
+dags/myenv/
+dags/.env
+dags/lib/
+logs/
+plugins/
