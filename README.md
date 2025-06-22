@@ -34,7 +34,7 @@ The pipeline is orchestrated using an **Airflow DAG** consisting of **three sequ
 
 ## 📸 Pipeline Execution
 
-![Pipeline Execution Screenshot](path_to_your_screenshot.png)
+![Pipeline Execution Screenshot](pipeline_airflow_ss.png)
 
 ---
 
