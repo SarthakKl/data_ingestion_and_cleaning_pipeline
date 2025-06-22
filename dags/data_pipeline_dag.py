@@ -15,14 +15,10 @@ default_args = {
 with DAG(
     dag_id='data_pipeline',
     default_args=default_args,
-    schedule=None,  # manually trigger for now
+    schedule=None,
     catchup=False,
     tags=['data-engineering']
 ) as dag:
-    
-    def check_file():
-        # Use boto3 to check if file exists in MinIO
-        print("Checking if file exists in MinIO...")
     
     def load_to_postgres():
         print("Running Spark job to parse file and load to postgres...")
