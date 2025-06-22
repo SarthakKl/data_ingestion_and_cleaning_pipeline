@@ -66,7 +66,7 @@ mkdir jars plugins logs
 
 ```bash
 # Build the custom Docker image (e.g., for Spark/Airflow)
-docker build -t etl-pipeline-image .
+docker build -t airflow-with-pyspark .
 
 # Run all services
 docker-compose up -d
@@ -93,7 +93,7 @@ docker network connect airflow-docker_default minio1
 ### 5. 🛖 Trigger DAG
 
 * Access Airflow at `http://localhost:8080`
-* Trigger the DAG named `etl_pipeline`
+* Trigger the DAG named `data_pipeline`
 * Monitor task progress via the Airflow UI
 
 ---
